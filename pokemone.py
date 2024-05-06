@@ -33,6 +33,7 @@ while pokemon_seleccionado == None:
             raise Exception()
     except:
         print("Ese no es un pokémon válido")
+        pokemon_seleccionado = None
 
 pokemones = ["charmander", "bulbasaur", "squirtle"]
 print(f"Bien! Tu pokémon es: {pokemones[pokemon_seleccionado - 1]}")
@@ -52,6 +53,7 @@ while region_seleccionada == None:
             raise Exception()
     except:
         print("Esa no es una región válida")
+        region_seleccionada = None
 
 regiones = ["Kanto", "Hoenn", "Johto"]
 print(f"Bien! Tu región es: {regiones[region_seleccionada - 1]}")
